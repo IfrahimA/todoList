@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: grid; 
+    grid-template-rows: 1fr 5fr 1fr;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Header */
+
+.header
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    outline: 2px solid rgba(0, 0, 0, 0.5); 
+}
+
+.headerTitle
+{
+    font-size: 36px; 
+    font-weight: 600; 
+}
+
+
+/* Body */
+.content
+{
+    display: grid; 
+    grid-template-columns: 1fr 4fr;
+    padding: 5%; 
+}
+
+.inbox, .today, .week
+{
+    display: flex; 
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    line-height: 3rem;
+    transition: 1s; 
+}
+
+.inbox:hover, .today:hover, .week:hover
+{
+    transform: translateY(-10%);
+    transform: scale(1.25); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.displayTitle
+{
+    font-size: 24px; 
+    font-weight: 500;
+    margin-top: 1rem; 
+}
+
+.projects button
+{
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    line-height: 3rem;
+    transition: transform 0.5s; 
+}
+
+.projects button:hover
+{
+    transform: scale(1.25);
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+
+
+/* Footer */
+.footer
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.footer:hover
+{
+    transform: scale(1.25); 
+}
