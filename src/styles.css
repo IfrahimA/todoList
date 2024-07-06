@@ -49,7 +49,8 @@
     align-items: center;
     gap: 1rem;
     line-height: 3rem;
-    transition: 1s; 
+    transition: 1s;
+    width: fit-content; 
 }
 
 .inbox:hover, .today:hover, .week:hover
@@ -83,6 +84,56 @@
     cursor: pointer; 
 }
 
+.projectDisplay
+{
+    border: none; 
+    outline: none; 
+    background-color: transparent;
+    line-height: 3rem;
+    transition: transform 0.5s; 
+}
+
+.projectDisplay:hover
+{
+    transform: scale(1.25);
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.projectList
+{
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+/* Display (Right) */
+
+.addTaskBtn
+{
+    width: fit-content; 
+    height: fit-content;
+    border-radius: 5px; 
+    padding: 0.5em;
+    transition: color 0.5s, background-color 0.5s; 
+}
+
+.addTaskBtn:hover
+{
+    color: white; 
+    background-color: black;
+    cursor: pointer; 
+}
+
+.titleDisplay
+{
+    font-size: 32px; 
+    font-weight: 600; 
+}
+
+
 
 
 /* Footer */
@@ -99,4 +150,74 @@
 .footer:hover
 {
     transform: scale(1.25); 
+}
+
+.footer a
+{
+    text-decoration: none;
+    color: black; 
+}
+
+
+/* Modal */
+
+.show
+{
+    display: flex !important; 
+}
+
+.hide
+{
+    display: none !important; 
+}
+
+.modal
+{
+    position: fixed; 
+    width: fit-content; 
+    height: fit-content;
+    padding: 2rem;
+    border-radius: 10px;
+    line-height: 2rem;  
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1; 
+    left: 50%; 
+    top: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex; 
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    outline: 1px solid black; 
+}
+
+.modal input
+{
+    border: 0; 
+    outline: 0;
+    margin-top: 1rem; 
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+
+.modalBtn button
+{
+    outline: 0; 
+    border: 0; 
+    background-color: transparent;
+    margin: 1rem;
+    border-radius: 5px; 
+    padding: 5px;
+    transition: outline 1s, transform 0.5s, color 0.5s, background-color 0.5s; 
+}
+
+.modalBtn button:hover
+{
+    outline: 1px solid black;
+    color: white;
+    background-color: black;
+    transform: scale(1.25); 
+    cursor: pointer;
 }
