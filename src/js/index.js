@@ -1,7 +1,7 @@
 import * as css from '../styles.css';
-import { Task } from './task';
-import { Project } from './project';
-import { addProject } from './addProject.js'; 
+import { addProject, changeProjectDOM, addTask } from './addProject.js'; 
 
 
-addProject();  
+addProject();
+changeProjectDOM();
+addTask();

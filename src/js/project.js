@@ -6,6 +6,16 @@ export class Project
         this.tasks = []; 
     }
 
+    getTitle()
+    {
+        return this.title; 
+    }
+
+    getTasks()
+    {
+        return this.tasks;
+    }
+
     addTasks(task)
     {
         this.tasks.push(task)
@@ -26,24 +36,5 @@ export class Project
         projectDisplay.classList.add('projectDisplay');
 
         projectList.appendChild(projectDisplay);
-
-        projectDisplay.addEventListener('click', () => 
-        {
-            const button = document.createElement('button');
-            const titleDisplay = document.createElement('div'); 
-            
-            const display = document.querySelector('.display'); 
-            display.innerHTML = ""; 
-
-            titleDisplay.textContent = title; 
-            button.textContent = "+ Add Task"; 
-
-            titleDisplay.classList.add('titleDisplay');
-            button.classList.add('addTaskBtn');
-
-            display.appendChild(titleDisplay); 
-            display.appendChild(button); 
-        })
     }
 }
-

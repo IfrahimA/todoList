@@ -127,14 +127,19 @@
     cursor: pointer; 
 }
 
-.titleDisplay
+.title
 {
     font-size: 32px; 
     font-weight: 600; 
 }
 
-
-
+.task
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 1rem 0; 
+    align-items: center;
+}
 
 /* Footer */
 .footer
@@ -171,7 +176,7 @@
     display: none !important; 
 }
 
-.modal
+.modal, .taskModal
 {
     position: fixed; 
     width: fit-content; 
@@ -193,7 +198,7 @@
     outline: 1px solid black; 
 }
 
-.modal input
+.modal input, .taskModal input
 {
     border: 0; 
     outline: 0;
